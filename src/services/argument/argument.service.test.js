@@ -1,18 +1,10 @@
-import { ErrorMessage } from "../entities/error-message.entity.js";
-import { ArgumentService } from "./argument.service.js";
+import { ErrorMessage } from "../../entities/error-message.entity.js";
+import { ArgumentService } from "../../services/argument/argument.service.js";
 import { jest } from '@jest/globals';
-import { DataProcess } from '../entities/data-process.entity.js';
-import {ARGUMENT_EXPECTED_RESULTS_US01, ARGUMENT_EXPECTED_RESULTS_US02} from '../../test/services/argument.data.js';
+import { DataProcess } from '../../entities/data-process.entity.js';
 
 describe('ArgumentService', () => {
 
-    let mockDataProcess;
-    let service;
-
-    beforeEach(() => {
-      // Create a new mock instance of DataProcess for each test
-      mockDataProcess = new DataProcess();
-    });
     it('should log an error message if an invalid flag is provided', () => {
       const consoleLogSpy = jest.spyOn(console, 'log').mockImplementation();
       ArgumentService.processArguments(['--invalid']);

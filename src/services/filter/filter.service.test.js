@@ -1,6 +1,6 @@
-import { FILTER_EXPECTED_RESULTS_US01, FILTER_EXPECTED_RESULTS_US02 } from '../../test/services/filter-expected-results.data';
-import { FILTER_INPUT_DATA_US01, FILTER_INPUT_DATA_US02 } from '../../test/services/filter-input.data';
-import { FilterService } from '../services/filter.service.js'; // Replace with the actual path
+import { FILTER_EXPECTED_RESULTS_US01, FILTER_EXPECTED_RESULTS_US02 } from '../../../test/services/filter-expected-results.data.js';
+import { FILTER_INPUT_DATA_US01, FILTER_INPUT_DATA_US02 } from '../../../test/services/filter-input.data.js';
+import { FilterService } from '../../services/filter/filter.service.js'; // Replace with the actual path
 
 describe('FilterService', () => {
   describe('filterByPattern', () => {

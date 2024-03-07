@@ -1,6 +1,6 @@
-import { CountService } from '../services/count.service.js';
-import * as DATA from '../../test/services/count-input.data.js';
-import {COUNT_EXPECTED_RESULTS_US01} from '../../test/services/count-expected-results.data.js'
+import { CountService } from '../../services/count/count.service.js';
+import * as DATA from '../../../test/services/count-input.data.js';
+import {COUNT_EXPECTED_RESULTS_US01} from '../../../test/services/count-expected-results.data.js'
 describe('CountService', () => {
   describe('countCategories', () => {
     it('should count categories and append counts to the names of items and people', () => {

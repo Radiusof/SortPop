@@ -1,17 +1,17 @@
-import {DataProcess} from '../entities/data-process.entity.js';
-import {data} from '../core/config/data.js';
-import { ErrorMessage } from '../entities/error-message.entity.js';
+import {DataProcess} from '../../entities/data-process.entity.js';
+import {data} from '../../core/config/data.js';
+import { ErrorMessage } from '../../entities/error-message.entity.js';
 
-/**
-* Processes the command-line arguments and performs data operations based on the provided flags and patterns.
-* @param {string} args - The string of command-line arguments.
-*/
 export class ArgumentService {
+    /**
+    * Processes the command-line arguments and performs data operations based on the provided flags and patterns.
+    * @param {string} args - The string of command-line arguments.
+    */
     static processArguments(args) {
         if (args.length === 0) {
             console.log(ErrorMessage.NoArgument);
             return;
-          }
+        }
         const [flagWithSign, pattern] = args[0]?.split('=');
         const flag = flagWithSign.startsWith('--') ? flagWithSign : null;
         const process = new DataProcess(data);
