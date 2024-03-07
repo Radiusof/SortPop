@@ -1,4 +1,4 @@
-import { ArgumentService } from './services/argument.service.js';
+import { ArgumentService } from './services/argument/argument.service.js';
 // Read command-line arguments
 // Remove the first two elements from the command-line 
 const args = process.argv.slice(2);
