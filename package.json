@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "sortpop",
+  "version": "1.0.0",
+  "description": "This program has to filter a list of elements containing a pattern. It can also print the counts of People & Animals by counting the number of children and appending it in the name.",
+  "main": "app.js",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",  
+    "coverage": "node --experimental-vm-modules node_modules/.bin/jest --coverage" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "sortpop"
+  },
+  "author": "Kevin Delattre",
+  "license": "ISC"
+}
