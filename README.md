@@ -84,3 +84,7 @@ node app.js --count
 
 - Code readability, structure and consistency
 - Tests, and how they are written
+
+## Coverage Results
+
+![Alt text](img/test-cov.png)
