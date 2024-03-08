@@ -143,3 +143,4 @@ dist
 
 /.vscode
 /coverage
+.DS_STORE
